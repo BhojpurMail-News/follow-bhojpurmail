@@ -2,63 +2,49 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Follow BhojpurMail on Facebook</title>
+  <title>BhojpurMail Facebook Like</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    .fb-container {
       text-align: center;
-      background: #f9f9f9;
-      margin: 20px;
-      padding: 0;
+      margin-top: 20px;
     }
-    .cta-container {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      display: inline-block;
-      max-width: 95%;
-      box-sizing: border-box;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .cta-container p {
-      font-size: 15px;
+    .cta-text {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 12px;
       color: #222;
       line-height: 1.5;
-      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
-
-  <!-- Facebook SDK (required for Follow button) -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" 
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="xyz">
-  </script>
-
-  <div class="cta-container">
-    <p>
-      🙏 नीचे दिए गए 👇 Follow बटन पर क्लिक करें और BhojpurMail की हर खबर सबसे पहले पाएं!<br>
-      आपका एक Follow हमें और मजबूती देता है ताकि हम सच और आपकी आवाज़ बुलंद कर सकें।
-    </p>
-
-    <!-- Official Facebook Follow Button -->
-    <div class="fb-follow" 
-         data-href="https://www.facebook.com/BhojpurMailNews" 
-         data-width="" 
-         data-layout="button" 
-         data-size="large">
+  <div class="fb-container">
+    <div class="cta-text">
+      हमारे संघर्ष की असली ताकत आप हैं, सच की लड़ाई में आपका साथ सबसे अहम है।<br>
+      आपका छोटा-सा Like हमें बड़ी ताकत देगा, कृपया Like करके हमें और मज़बूत बनाएँ।
     </div>
 
-    <br><br>
-    <!-- Optional: Direct Like via Popup -->
-    <a href="https://www.facebook.com/BhojpurMailNews" 
-       onclick="window.open(this.href, '_blank', 'width=600,height=500'); return false;" 
-       style="display:inline-block; margin-top:10px; padding:10px 20px; background:#1877f2; color:#fff; font-weight:bold; text-decoration:none; border-radius:5px;">
-       👍 पेज पर जाकर Like करें
-    </a>
+    <!-- Facebook Page Plugin (Cover + Like only) -->
+    <div class="fb-page" 
+         data-href="https://www.facebook.com/BhojpurMailnews" 
+         data-tabs="" 
+         data-width="320" 
+         data-height="130" 
+         data-small-header="false" 
+         data-adapt-container-width="true" 
+         data-hide-cover="false" 
+         data-show-facepile="false">
+      <blockquote cite="https://www.facebook.com/BhojpurMailnews" 
+                  class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/BhojpurMailnews">BhojpurMail News</a>
+      </blockquote>
+    </div>
   </div>
 
+  <!-- Load Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0">
+  </script>
 </body>
 </html>
